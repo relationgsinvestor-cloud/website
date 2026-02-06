@@ -1,0 +1,95 @@
+<!-- ================================
+SMARTLIFE MULTI-PAGE HTML WEBSITE
+Folder Structure:
+/
+ ├─ index.html        (Landing page)
+ ├─ register.html     (User registration)
+ ├─ login.html        (User login)
+ ├─ dashboard.html    (User dashboard)
+ ├─ admin.html        (Admin dashboard)
+ ├─ legal.html        (Legal & disclosures)
+================================ -->
+
+<!-- ================= index.html ================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartLife | Investment Plans</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+<h1>SmartLife Investment Platform</h1>
+<p>Purpose-driven investing for groceries, school fees, rent, retirement, health and car insurance.</p>
+<a href="register.html" class="btn">Get Started</a>
+</header>
+<section class="grid">
+<div class="card">Groceries Plan</div>
+<div class="card">School Fees Plan</div>
+<div class="card">Rent Plan</div>
+<div class="card">Retirement Fund</div>
+<div class="card">Health Insurance</div>
+<div class="card">Car Insurance</div>
+</section>
+<footer>© 2026 SmartLife</footer>
+</body>
+</html>
+
+<!-- ================= register.html ================= -->
+<!DOCTYPE html>
+<html><head><title>Register</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h2>Create Account</h2>
+<input placeholder="Full Name"><input placeholder="Email"><input type="password" placeholder="Password">
+<a href="login.html" class="btn">Register</a>
+</body></html>
+
+<!-- ================= login.html ================= -->
+<!DOCTYPE html>
+<html><head><title>Login</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h2>Login</h2>
+<input placeholder="Email"><input type="password" placeholder="Password">
+<a href="dashboard.html" class="btn">Login</a>
+</body></html>
+
+<!-- ================= dashboard.html ================= -->
+<!DOCTYPE html>
+<html><head><title>User Dashboard</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h2>Dashboard</h2>
+<div class="card">Wallet Balance: $10,000</div>
+<select><option>Select Plan</option></select>
+<select><option>Weekly</option><option>Monthly</option></select>
+<button class="btn">Invest</button>
+</body></html>
+
+<!-- ================= admin.html ================= -->
+<!DOCTYPE html>
+<html><head><title>Admin Dashboard</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h2>Admin Panel</h2>
+<div class="card">Total Users: 1,245</div>
+<div class="card">Total Funds: $3.4M</div>
+<input placeholder="Set ROI %"><button class="btn">Update</button>
+</body></html>
+
+<!-- ================= legal.html ================= -->
+<!DOCTYPE html>
+<html><head><title>Legal</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h2>Legal & Risk Disclosure</h2>
+<p>No financial advice. Investments carry risk. Returns not guaranteed.</p>
+<p>Not a registered SEC broker or investment advisor.</p>
+</body></html>
+
+<!-- ================= style.css ================= -->
+<style>
+body{font-family:Arial;background:#f5f7fb;margin:0;padding:20px}
+.hero{background:#0f172a;color:#fff;padding:60px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin:40px}
+.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.05)}
+.btn{display:inline-block;background:#2563eb;color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none}
+footer{text-align:center;margin-top:40px;color:#555}
+</style>
